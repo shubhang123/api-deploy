@@ -4,17 +4,13 @@ from typing import List, Union
 
 app = FastAPI()
 
-
-# --- Request schema ---
 class InputData(BaseModel):
     data: List[Union[str, int]]
 
-
-# --- Response route ---
 @app.post("/bfhl")
 async def process_data(input: InputData):
-    user_id = "sdasdsad"  
-    email = "ajsdnsd@xyz.com"                
+    user_id = "shubhang_chakrawarty_20112004"  
+    email = "shubhangchakrawarty220272@acropolis.in"                
     roll_number = "ABCD123"
 
     numbers = []
